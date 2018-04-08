@@ -1,6 +1,3 @@
-
-#file_path = "C:/Users/Riley/OneDrive/1_github/python_snipets/test"
-
 import sys, os
 
 

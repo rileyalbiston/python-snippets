@@ -1,0 +1,2 @@
+This string of text was written
+And this string of text was appended.

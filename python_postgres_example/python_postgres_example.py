@@ -1,6 +1,7 @@
 import psycopg2
 import sys
 import csv
+import json
 
 # https://wiki.postgresql.org/wiki/Using_psycopg2_with_PostgreSQL
 # http://www.postgresqltutorial.com/postgresql-python/connect/
@@ -41,7 +42,7 @@ def basic_query():
 		# fetch all rows
 		all = cursor.fetchall()
 		for p in all:
-			print(p)
+			print(p[1])
 		# close the communication with the PostgreSQL
 		cursor.close()
 	except:
@@ -50,8 +51,7 @@ def basic_query():
 		if conn is not None:
 			conn.close()
 			print('Database connection closed.')
-
-
+		
 
 def create_table():
 	try:

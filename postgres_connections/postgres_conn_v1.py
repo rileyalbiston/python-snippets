@@ -7,6 +7,7 @@ except:
 
 cur = conn.cursor()
 
+# gets all the databases on this host
 cur.execute("""SELECT datname from pg_database""")
 
 rows = cur.fetchall()

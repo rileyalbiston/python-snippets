@@ -101,6 +101,7 @@ def insert_data():
 			conn.close()
 			print('Database connection closed.')
 
+# https://www.dataquest.io/blog/loading-data-into-postgres/
 
 def csv_insert_by_row():
 	try:
